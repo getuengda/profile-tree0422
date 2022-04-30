@@ -42,13 +42,18 @@ body::before{
   right: 0;
   height: 100vh;
   z-index: -1;
+  overflow: auto;
+
 }
 
+
 .navbar{
+  margin: 0%;
   background-color: #000000;
-  color: white
-  
+  color: white;
+  position: fixed; 
 }
+
 .navbar .container-fluid .navbar-brand{
   color: white;
 }
@@ -90,19 +95,19 @@ body::before{
 }
 
  h1{
-   font-family: "TapestryTapestry", sans-serif;
+   font-family: "Tapestry", Arial, Helvetica, sans-serif;;
    color: rgb(255, 132, 0);
    text-decoration: wavy;
    line-height: 2rem;
  }
-/* hero background image */
+/* hero background part */
 .bgimage {
   height:100vh;
   background: url("https://media.istockphoto.com/photos/arches-national-park-picture-id1094102346?k=20&m=1094102346&s=612x612&w=0&h=9iODP2YxAJ-jZLhOO4kMYITGKRn9XZv8OdJ6kNNZiqY=");
   background-size:cover;
   position:relative;
 }
-/* text css above hero image*/
+
 .hero_title {
   font-size: 4.5rem;
 }
@@ -119,21 +124,24 @@ body::before{
   transform: translate(-50%, -50%);
   color: white;
 }
+/* about section  css */
 
 #about{
   border: 0.25rem solid black;
   background-color: antiquewhite;
+  background-image: url("https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFjayUyMGdyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
   opacity: 100%;
   font-size: calc(1rem);
   padding: 2rem 2.5rem;
   margin-top: 3rem;
 }
-/* about section image css */
+
 .imageAboutPage {
   width: 100%;
 }
 
-/* services section css */
+
+/* bio section css */
 
 .servicesText.card {
   height: 280px;
@@ -186,12 +194,13 @@ span {
 /* spacing on all sections */
 #about, #bio, #portfolio, #contact {
   margin-top: 4rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
-/* experiance mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+/* experiance */
 #experience{
   border: 5px solid black;
   background-color: antiquewhite;
+  background-image: url("https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFjayUyMGdyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
@@ -207,10 +216,8 @@ span {
   text-align: center;
   margin: 2rem;
 }
-/* new ends here mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
-
-/*  education begins here */
+/* css education starts here */
 .edu-container{
   background-color: antiquewhite;
   margin-top: 6rem;
@@ -233,18 +240,115 @@ margin-top: 2rem;
 margin-bottom: 2rem;
 }
 .edu-container .degree-college{
+  background-image: url("https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFjayUyMGdyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
   border: 0.15rem black dotted;
+  padding-left: 2rem;
+  font-size: .70rem;
 }
-/* new education ends here */
+/* education ends here */
+
+/* css BIO part starts here */
+.bio-section{
+  background-image: url("https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmclMjBza2lsbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+ 
+}
+.skill-items .skill-list{
+  border: .15rem black dotted; 
+  background-color: rgb(65, 75, 80);
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  /* padding-top: 1rem; */
+
+} 
+.skill-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+  align-items: center;
+}
+
+.programming-icons .bio-img-icons {
+  display: flex;
+ justify-content: row;
+  
+}
+.bio-img-icons img{
+  width: 5rem;
+  height: 3rem;
+}
+
+.skill-list h4{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 0.40;
+  font-weight: 50;
+  
+}
+
+.bio-itmem-list ul{
+  width: 400px;
+  height:auto;
+  color: #22cf1c;
+  text-align: left;
+  /* list-style-type: none; */
+  border: .15rem dodgerblue dotted;
+  border-radius: 5%;
+}
 
 
-.col-lg-8,.row ul{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: .85rem;
+.skill-items .skill-list .programming-icons{
+  display: block;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
+  border: 0.15rem rgb(21, 7, 7) dotted;
+  margin-right: 3rem;
+  padding-left: 3rem;
+  background-color: #898381;
 }
+
+/*  Bio part ends here */
+
+/* draft css portfolio starts here (new version 04/30/2022 4:00am)*/
+  img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  }
+
+  .portfolio-section{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: .15rem black dotted;
+    text-align: center;
+    margin-bottom: 6rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-sub-itmes{
+    border: .15rem red dotted;
+    justify-content: space-between;
+    margin-right: 3rem;
+    width: 20rem;
+    height: 15rem;
+    flex-grow: 1;
+  }
+
+  .project-list{
+    border: 0.05rem #22cf1c dotted;
+    width: 100%;
+    height:100%;
+  }
+  
+/* draft css portfolio ends here */
+
+
 #contact {
   padding-bottom: 4rem;
   box-shadow: #808080;
@@ -259,7 +363,7 @@ button.btn{
 }
 
 
-.col-lg-4.card .card-body img{
+/* .col-lg-4.card .card-body img{
   display: inline-block;
   position: relative;
   justify-content: center;
@@ -268,12 +372,12 @@ button.btn{
   align-items: center;
   padding: 0%;
 
-}
+} */
 
 .page-section, #footer-bottom{
   background-image: url("https://images.unsplash.com/photo-1614034178871-d038bce3b763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdGVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
   width: 100%;
-  height: 75px;
+  height: 100px;
 
 }
 
@@ -317,6 +421,7 @@ button.btn{
 }
 
 /* Media Query "responsive" class */
+
 @media screen and (max-width: 600px) {
 
   #about{
